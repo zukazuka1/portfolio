@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,0,255,1) 78%, rgba(0,212,255,1) 100%);
+}
+
+
+header{
+    background-color: rgb(66, 0, 151);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100;
+
+}
+
+.list-container  {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+a{
+    color: rgb(34, 0, 228);
+    text-decoration: none;
+    font-weight: 21.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
