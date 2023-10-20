@@ -3,13 +3,18 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: rgb(1, 0, 10);
-    background: linear-gradient(90deg, rgb(8, 8, 65) 0%, rgba(102, 0, 255, 1) 78%, rgba(0, 212, 255, 1) 100%);
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 
 header {
+    position: fixed;
     background-color: rgb(47, 2, 114);
     width: 100%;
     display: flex;
@@ -23,11 +28,13 @@ header {
     margin-left: 50px;
     color: rgb(253, 253, 255);
     font-size: 50;
-    
+
 }
+
 .nav-bar {
     margin-right: 50px;
 }
+
 .list-container {
     display: flex;
     gap: 30px;
@@ -42,20 +49,50 @@ header {
     font-weight: 700;
     transition: 0.3s;
 }
-.element:hover{
+
+.element:hover {
     color: rgb(8, 168, 8);
 }
-.section1 {
-    height: 80vh;
-    width: 100vw;
+
+#section1,
+#section2,
+#section3,
+#section4 {
+    width: 100%;
+    height: 100vh;
+}
+
+#section1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(90deg, rgb(8, 8, 65) 0%, rgba(102, 0, 255, 1) 78%, rgba(0, 212, 255, 1) 100%);
 }
 
-.section1 div h1 {
-    color: orange;
-    font-size: 4rem;
-    margin-bottom: 100px;
+.wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 250px;
+}
 
+.text {
+    color: #FFF;
+    font-weight: bolder;
+    font-family: monospace;
+
+}
+
+.welcome {
+    font-size: 3rem;
+
+}
+
+.whoami {
+    font-size: 4rem;
+}
+
+.ican {
+    font-size: 5rem;
 }
