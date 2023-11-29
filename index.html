@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,12 +31,30 @@
         </div>
     </section>
     <section id="section2"></section>
-    <section id="section3"></section>
+    <section id="section3">
+        <div class="wraper-secion3">
+            <div class="box box1">
+                <img src="img/html.svg" alt="html" class="logo-icons">
+                <h1 class="logo-text">HTML</h1>
+            </div>
+            <div class="box box2">
+                <img src="img/css.svg" alt="css" class="logo-icons">
+                <h1 class="logo-text">CSS</h1>
+            </div>
+            <div class="box box3">
+                <img src="img/js.svg" alt="js" class="logo-icons">
+                <h1 class="logo-text">JS</h1>
+            </div>
+        </div>
+    </section>
     <section id="section4">
         <div class="contact">
             <div class="container">
                 <h1 class="text">contact me</h1>
-                <h2 class="email">zurab@kopitnari.net</h2>
+                <div class="emailcanteiner">
+                    <i class="fa-solid fa-envelope" style="color: #d72d2d; "></i>
+                    <h2 class="email">zurab@kopitnari.net</h2>
+                </div>
             </div>
         </div>
         <div class="message">
@@ -41,6 +62,7 @@
                 <input type="text" class="inputfield" placeholder="Name">
                 <input type="email" class="inputfield" placeholder="Email">
                 <textarea class="messages inputfield" placeholder="Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send" class="button">
             </div>
         </div>
     </section>
