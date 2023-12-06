@@ -17,6 +17,7 @@ body {
 
 header {
     position: fixed;
+    z-index: 5;
     background-color: rgb(47, 2, 114);
     width: 100%;
     display: flex;
@@ -61,6 +62,7 @@ header {
 #section2,
 #section3,
 #section4 {
+    position: relative;
     width: 100%;
     height: 100vh;
 }
@@ -82,9 +84,7 @@ header {
 
 .text {
     color: #FFF;
-    font-weight: bolder;
-    font-family: monospace;
-    font-size: 4vw;
+    font-family: Helvetica;
 }
 
 .welcome {
@@ -104,9 +104,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
-
+    background: rgb(255, 68, 0);
+    background: linear-gradient(90deg, #ff4400 13%, #02d5ff 47%, #f2ff02 82%);
 }
+
 
 .wraper-secion3 {
     height: 50%;
@@ -114,18 +115,18 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(99, 99, 248);
+    background: rgba(0, 131, 253, 0.788);
     border-radius: 50px;
 }
 
 .box {
-    height: 50%;
-    width: 15%;
+    height: max(150px, 50%);
+    width: max(100px, 15%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #D4D4D4;
+
     border-radius: 50px;
     transition: transform 0.5s;
 }
@@ -152,26 +153,26 @@ header {
     font-family: monospace;
 }
 
+.logo-icon {
+    width: max(30px, 90%);
+}
+
 #section4 {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-image: url(img/section4bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.emailcanteiner {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    font-size: 1.3rem;
-}
-
-.email {
-    color: white;
-    font-family: monospace;
-    font-weight: bold;
-
+.divide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .contact,
@@ -181,15 +182,36 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     width: 50%;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.add {
+    margin-top: 50px;
+}
+
+.contact-me {
+    color: #FFF;
+    font-family: monospace;
+    font-size: 5rem;
+}
+
+.emailcanteiner {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.3rem;
+    font-family: monospace;
+    color: #FFF;
 }
 
 .inputfield {
@@ -206,7 +228,6 @@ header {
     height: auto;
     padding: 10px 15px;
     resize: none;
-
 }
 
 .button {
