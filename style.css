@@ -15,15 +15,16 @@ body {
 }
 
 
-header {
+.head {
     position: fixed;
     z-index: 5;
-    background-color: rgb(47, 2, 114);
+    background-color: #2f0272;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 10vh;
+    transition: 0.3s;
 
 }
 
@@ -45,17 +46,25 @@ header {
     list-style: none;
 }
 
+.list-container li {
+    display: flex;
+}
+
 .element {
     color: #FFF;
     text-decoration: none;
-    font-weight: 21.25rem;
+    font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
 .element:hover {
+    background: #80808050;
     color: rgb(8, 168, 8);
+    transform: scale(1.1);
 }
 
 #section1,
@@ -88,23 +97,22 @@ header {
 }
 
 .welcome {
-    font-size: 3rem;
-
+    font-size: clamp(13px, 3vw, 4rem);
 }
 
 .whoami {
-    font-size: 4rem;
+    font-size: clamp(17px, 4vw, 5rem);
 }
 
 .ican {
-    font-size: 5rem;
+    font-size: clamp(21px, 5vw, 6rem);
 }
 
 #section3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(255, 68, 0);
+    background: #ff4400;
     background: linear-gradient(90deg, #ff4400 13%, #02d5ff 47%, #f2ff02 82%);
 }
 
@@ -246,3 +254,4 @@ header {
     background: rgb(82, 82, 82);
     border: 2px solid #FFF;
 }
+
