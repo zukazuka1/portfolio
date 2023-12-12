@@ -63,13 +63,17 @@
         </div>
         <div class="message">
             <div class="container add">
-                <input type="text" class="inputfield" placeholder="Name">
-                <input type="email" class="inputfield" placeholder="Email">
-                <textarea class="messages inputfield" placeholder="Message" cols="30" rows="10"></textarea>
-                <input type="submit" value="Send" class="button">
+                <form name="submit-to-google-sheet">
+                    <input id="name-field" type="text" class="inputfield" placeholder="Name" name="Name" required>
+                    <input id="email-field" type="email" class="inputfield" placeholder="Email" name="Email" required>
+                    <textarea id="message-field" class="messages inputfield" placeholder="Message" name="Message" cols="30" rows="10" required></textarea>
+                    <input type="submit" value="Send" id="buttons" class="button">
+                    <h3 id="response"></h3>
+                </form>
             </div>
         </div>
     </section>
+    <script src="cantact.js"></script>
 </body>
 
 </html>
