@@ -28,13 +28,22 @@
         <div class="wraper">
             <h1 class="text welcome">Welcome</h1>
             <h1 class="text whoami">My name is Zuka</h1>
-            <h1 class="text ican">I can change World</h1>
+            <h1 class="text ican">I can center div</h1>
         </div>
     </section>
     <section id="section2">
-        <img src="img/section2.svg" alt="" width="100%" class="divide">
+        <div class="about-wrapper">
+            <div class="about-text-container">
+                <h1>Hey, I'm Zuka—a Front-End Maestro, weaving captivating digital realms. 💻✨ With a year
+                    immersed in HTML, CSS, and JS, I breathe life into ideas, harmonizing design and functionality
+                    seamlessly. 🎨 Your digital journey deserves innovation, and I'm here to turn that vision into a
+                    reality. Let's embark on this extraordinary creative voyage together! 🌐✨</h1>
+            </div>
+        </div>
+
     </section>
     <section id="section3">
+        <img src="img/section2.svg" alt="" width="100%" class="divide">
         <div class="wraper-secion3">
             <div class="box box1">
                 <img src="img/html.svg" alt="html" class="logo-icons">
@@ -54,7 +63,7 @@
         <img src="img/section3.svg" alt="" class="divide">
         <div class="contact">
             <div class="container">
-                <h1 class="contact-me">contact me</h1>
+                <h1 class="contact-me">Contact Me</h1>
                 <div class="emailcanteiner">
                     <i class="fa-solid fa-envelope" style="color: #d72d2d; font-size: 2rem;"></i>
                     <h2 class="email">zurab@kopitnari.net</h2>
@@ -66,14 +75,33 @@
                 <form name="submit-to-google-sheet">
                     <input id="name-field" type="text" class="inputfield" placeholder="Name" name="Name" required>
                     <input id="email-field" type="email" class="inputfield" placeholder="Email" name="Email" required>
-                    <textarea id="message-field" class="messages inputfield" placeholder="Message" name="Message" cols="30" rows="10" required></textarea>
-                    <input type="submit" value="Send" id="buttons" class="button">
-                    <h3 id="response"></h3>
+                    <textarea id="message-field" class="messages inputfield" placeholder="Message" name="Message"
+                        cols="30" rows="10" required></textarea>
+                    <button type="submit" id="buttons" class="button">Send</button>
                 </form>
             </div>
         </div>
     </section>
     <script src="cantact.js"></script>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        [
+            '#FF69B4',
+            '#DC143C',
+            '#9ACD32',
+            '#FF8C00',
+            '#7FFFD4',
+            '#9370DB',
+            '#FFD700'
+        ].forEach(function (item) {
+            new Snowflakes({
+                count: 15,
+                maxSize: 40,
+                color: item,
+                speed: 2
+            });
+        });
+    </script>
 </body>
 
 </html>
