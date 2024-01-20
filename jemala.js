@@ -42,4 +42,24 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector(".head").style.background = "#2f0272";
         })
     })
+
+    document.querySelector(".close").addEventListener("click", () => {
+        document.querySelector(".nav-bar").classList.remove("active")
+        document.querySelector(".invisble").classList.remove("actives")
+    })
+    document.querySelector(".menu").addEventListener("click", () => {
+        document.querySelector(".nav-bar").classList.add("active")
+        document.querySelector(".invisble").classList.add("actives")
+    })
+    document.querySelector(".invisble").addEventListener("click", () => {
+        document.querySelector(".nav-bar").classList.remove("active")
+        document.querySelector(".invisble").classList.remove("actives")
+    })
+
+    document.querySelectorAll(".element").forEach((element) => {
+        element.addEventListener("click", () => {
+            document.querySelector(".nav-bar").classList.remove("active")
+            document.querySelector(".invisble").classList.remove("actives")
+        })
+    })
 });
