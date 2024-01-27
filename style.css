@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 * {
     margin: 0;
@@ -10,29 +11,28 @@ html {
 }
 
 body {
-    width: 100vw;
+    max-width: 100vw;
     overflow-x: hidden;
+    background: linear-gradient(90deg, rgb(8, 8, 65) 0%, rgba(102, 0, 255, 1) 78%, rgba(0, 212, 255, 1) 100%);
 }
 
-
-header {
+.head {
     position: fixed;
-    z-index: 5;
-    background-color: rgb(47, 2, 114);
+    z-index: 10;
+    background-color: #2f0272;
     width: 100%;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
-
+    transition: 0.3s;
 }
 
 .logo {
-    font-family: 'Pacifico', cursive;
     margin-left: 50px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
     color: rgb(253, 253, 255);
-    font-size: 50;
-
 }
 
 .nav-bar {
@@ -45,17 +45,23 @@ header {
     list-style: none;
 }
 
+.list-container li {
+    display: flex;
+}
+
 .element {
     color: #FFF;
     text-decoration: none;
-    font-weight: 21.25rem;
+    font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
-.element:hover {
-    color: rgb(8, 168, 8);
+.res {
+    display: none;
 }
 
 #section1,
@@ -71,7 +77,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgb(8, 8, 65) 0%, rgba(102, 0, 255, 1) 78%, rgba(0, 212, 255, 1) 100%);
 }
 
 .wraper {
@@ -84,77 +89,113 @@ header {
 
 .text {
     color: #FFF;
-    font-family: Helvetica;
+    font-family: 'Lemon', serif;
 }
 
 .welcome {
-    font-size: 3rem;
-
+    font-size: clamp(36px, 3vw, 4rem);
 }
 
 .whoami {
-    font-size: 4rem;
+    font-size: clamp(33px, 4vw, 5rem);
 }
 
 .ican {
-    font-size: 5rem;
+    font-size: clamp(40px, 5vw, 6rem);
+}
+
+.c-button {
+    padding: 10px 20px;
+    font-family: lemon;
+    font-size: clamp(10px, 5vw, 2rem);
+    text-decoration: none;
+    border: 2px solid green;
+    border-radius: 12px;
+    color: white;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+
+.about-wrapper {
+    width: min(100vw, 1912px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text-container {
+    max-width: 75%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: lemon;
 }
 
 #section3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(255, 68, 0);
-    background: linear-gradient(90deg, #ff4400 13%, #02d5ff 47%, #f2ff02 82%);
 }
 
-
 .wraper-secion3 {
-    height: 50%;
+    height: 70%;
     width: 90%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    background: rgba(0, 131, 253, 0.788);
+    flex-wrap: wrap;
     border-radius: 50px;
+    gap: 30px;
+}
+
+.invisble {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
 }
 
 .box {
-    height: max(150px, 50%);
-    width: max(100px, 15%);
+    width: 30%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     border-radius: 50px;
     transition: transform 0.5s;
+    flex-grow: 1;
 }
 
-.box:hover {
-    transform: scale(1.3);
+.box i {
+    font-size: 10rem;
 }
 
 .box1 {
     border: 11px solid #F1662A;
+    color: #f06529;
 }
 
 .box2 {
     border: 11px solid #33A9DC;
+    align-self: flex-end;
+    color: #264de4;
 }
 
 .box3 {
     border: 11px solid #F5DE19;
+    color: #f0db4f;
 }
 
 .logo-text {
     color: #ffffff;
-    font-size: 40px;
-    font-family: monospace;
-}
-
-.logo-icon {
-    width: max(30px, 90%);
+    font-size: 5rem;
+    font-family: lemon;
 }
 
 #section4 {
@@ -171,7 +212,7 @@ header {
 .divide {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -5px;
     width: 100%;
 }
 
@@ -182,26 +223,33 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .container {
     width: 50%;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
 }
 
 .add {
     margin-top: 50px;
 }
 
+.add form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
 .contact-me {
+    display: block;
     color: #FFF;
     font-family: monospace;
     font-size: 5rem;
+    font-size: clamp(20px, 8vw, 5rem);
+    width: 500px;
 }
 
 .emailcanteiner {
@@ -209,9 +257,10 @@ header {
     display: flex;
     align-items: center;
     gap: 1vw;
-    font-size: 1.3rem;
     font-family: monospace;
     color: #FFF;
+    font-size: 1.3rem;
+    font-size: clamp(20px, 5vw, 1.3rem);
 }
 
 .inputfield {
@@ -220,6 +269,7 @@ header {
     width: 95%;
     height: 5%;
     color: rgb(255, 255, 255);
+    border: 2px solid gray;
     border-radius: 10px;
 }
 
@@ -241,8 +291,199 @@ header {
 
 }
 
-.button:hover {
-    color: green;
-    background: rgb(82, 82, 82);
-    border: 2px solid #FFF;
+
+@media screen and (min-width: 786px) {
+    .c-button:hover {
+        background: green;
+    }
+
+    .box:hover {
+        transform: scale(0.9);
+    }
+
+    .element:hover {
+        background: #80808050;
+        color: rgb(8, 168, 8);
+        transform: scale(1.1);
+    }
+
+    .button:hover {
+        color: #008000;
+        background: #525252;
+        border: 2px solid #FFF;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        transform: translateX(50%);
+        margin: 0;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        background: #8000807c;
+        backdrop-filter: blur(30px);
+        transition: 0.5s;
+        z-index: 3;
+    }
+
+    .nav-bar.active {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    .invisble.actives {
+        display: block;
+        z-index: 2;
+    }
+
+
+    .list-container {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 50px;
+
+    }
+
+    .res {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: white;
+    }
+
+    .about-text-container {
+        font-size: 1.5rem;
+    }
+
+    .res:active {
+        background: lightgray;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+
+    .menu {
+        margin-right: 50px;
+    }
+
+    .logo-text {
+        font-size: 35px;
+    }
+
+    .box:active {
+        transform: scale(1.3);
+    }
+
+    .button:active {
+        color: #008000;
+        background: #525252;
+        border: 2px solid #FFF;
+    }
+
+    #section4 {
+        flex-direction: column;
+    }
+
+    .contact {
+        width: 100%;
+        height: 20%;
+        align-items: flex-end;
+
+    }
+
+    .message {
+        width: 100%;
+        height: 70%;
+        align-items: flex-start;
+    }
+
+    .inputfield {
+        padding-block: 10px;
+    }
+
+    .emailcanteiner {
+        font-size: clamp(5px, 4vw, 1rem);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        font-size: 1.6rem;
+        margin-left: 20px;
+    }
+
+    .menu {
+        font-size: 1.6rem;
+        margin-right: 20px;
+    }
+
+    .welcome {
+        font-size: clamp(10px, 7vw, 2rem);
+    }
+
+    .whoami {
+        font-size: clamp(10px, 8vw, 2rem);
+    }
+
+    .ican {
+        font-size: clamp(10px, 10vw, 4rem);
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    .container {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .about-text-container {
+        font-size: 0.7rem;
+    }
+
+    .box {
+        width: 100%;
+        height: 20%;
+        border-width: 2px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 40px;
+    }
+
+    .box i {
+        font-size: 5rem;
+    }
+
+
+    .contact-me {
+        font-size: clamp(16px, 14vw, 3rem);
+        width: 100%;
+    }
+
+    .emailcanteiner {
+        font-size: clamp(5px, 4vw, 1rem);
+    }
+
+    .add form {
+        align-items: center;
+    }
+
+    #buttons {
+        width: 100%;
+    }
 }
