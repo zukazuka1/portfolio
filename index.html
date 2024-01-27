@@ -7,57 +7,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/1.6.1/kute.min.js"
+        integrity="sha512-DeLO4mdijNCQ3uOZDb1u+sUadgQUQnPr3zlPejMZBNbLi9rreaGwBjIJXYPU8WNJpRWb9LG6RpP6kdodXw6AGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jemala.js" defer></script>
 </head>
 
 <body>
     <header class="head">
         <h1 class="logo">ZUKA</h1>
-        <div class="invisble"></div>
         <nav class="nav-bar">
             <ul class="list-container">
-                <li><a class="element" href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a class="element" href="#section2"><i class="fa-solid fa-circle-info"></i> About</a></li>
-                <li><a class="element" href="#section3"><i class="fa-solid fa-code"></i> Skill</a></li>
-                <li><a class="element" href="#section4"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                <li><a class="element" href="#">Home</a></li>
+                <li><a class="element" href="#section2">About</a></li>
+                <li><a class="element" href="#section3">Skill</a></li>
+                <li><a class="element" href="#section4">Contact</a></li>
             </ul>
-            <i class="fa-solid fa-xmark res close"></i>
         </nav>
-        <i class="fa-solid fa-bars res menu"></i>
     </header>
     <section id="section1">
         <div class="wraper">
             <h1 class="text welcome">Welcome</h1>
             <h1 class="text whoami">My name is Zuka</h1>
-            <h1 class="text ican">I can center div</h1>
+            <h1 class="text ican">I can change World</h1>
         </div>
     </section>
     <section id="section2">
-        <div class="about-wrapper">
-            <div class="about-text-container">
-                <h1>Hey, I'm Zuka—a Front-End Maestro, weaving captivating digital realms. 💻✨ With a year
-                    immersed in HTML, CSS, and JS, I breathe life into ideas, harmonizing design and functionality
-                    seamlessly. 🎨 Your digital journey deserves innovation, and I'm here to turn that vision into a
-                    reality. Let's embark on this extraordinary creative voyage together! 🌐✨</h1>
-            </div>
-        </div>
-
+        <img src="img/section2.svg" alt="" width="100%" class="divide">
     </section>
     <section id="section3">
-        <img src="img/section2.svg" alt="" width="100%" class="divide">
         <div class="wraper-secion3">
             <div class="box box1">
-                <i class="fa-brands fa-html5"></i>
+                <img src="img/html.svg" alt="html" class="logo-icons">
                 <h1 class="logo-text">HTML</h1>
             </div>
             <div class="box box2">
-                <i class="fa-brands fa-css3-alt"></i>
+                <img src="img/css.svg" alt="css" class="logo-icons">
                 <h1 class="logo-text">CSS</h1>
             </div>
             <div class="box box3">
-                <i class="fa-brands fa-square-js"></i>
+                <img src="img/js.svg" alt="js" class="logo-icons">
                 <h1 class="logo-text">JS</h1>
             </div>
         </div>
@@ -66,7 +56,7 @@
         <img src="img/section3.svg" alt="" class="divide">
         <div class="contact">
             <div class="container">
-                <h1 class="contact-me">Contact Me</h1>
+                <h1 class="contact-me">contact me</h1>
                 <div class="emailcanteiner">
                     <i class="fa-solid fa-envelope" style="color: #d72d2d; font-size: 2rem;"></i>
                     <h2 class="email">zurab@kopitnari.net</h2>
@@ -75,36 +65,13 @@
         </div>
         <div class="message">
             <div class="container add">
-                <form name="submit-to-google-sheet">
-                    <input id="name-field" type="text" class="inputfield" placeholder="Name" name="Name" required>
-                    <input id="email-field" type="email" class="inputfield" placeholder="Email" name="Email" required>
-                    <textarea id="message-field" class="messages inputfield" placeholder="Message" name="Message"
-                        cols="30" rows="10" required></textarea>
-                    <button type="submit" id="buttons" class="button">Send</button>
-                </form>
+                <input type="text" class="inputfield" placeholder="Name">
+                <input type="email" class="inputfield" placeholder="Email">
+                <textarea class="messages inputfield" placeholder="Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send" class="button">
             </div>
         </div>
     </section>
-    <script src="cantact.js"></script>
-    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-    <script>
-        [
-            '#FF69B4',
-            '#DC143C',
-            '#9ACD32',
-            '#FF8C00',
-            '#7FFFD4',
-            '#9370DB',
-            '#FFD700'
-        ].forEach(function (item) {
-            new Snowflakes({
-                count: 15,
-                maxSize: 40,
-                color: item,
-                speed: 2
-            });
-        });
-    </script>
 </body>
 
 </html>
