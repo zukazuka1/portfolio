@@ -252,6 +252,20 @@ body {
     width: 500px;
 }
 
+.donwload {
+    position: absolute;
+    margin-top: 50px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: #264de4;
+    
+}
+
 .emailcanteiner {
     height: 50px;
     display: flex;
@@ -312,7 +326,6 @@ body {
         background: #525252;
         border: 2px solid #FFF;
     }
-
 }
 
 @media screen and (max-width: 786px) {
@@ -418,6 +431,10 @@ body {
     .emailcanteiner {
         font-size: clamp(5px, 4vw, 1rem);
     }
+
+    .donwload {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -426,8 +443,11 @@ body {
         margin-left: 20px;
     }
 
+    .nav-bar {
+        width: 100%;
+    }
+
     .menu {
-        font-size: 1.6rem;
         margin-right: 20px;
     }
 
@@ -443,8 +463,10 @@ body {
         font-size: clamp(10px, 10vw, 4rem);
     }
 
-    .nav-bar {
-        width: 100%;
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 100px;
     }
 
     .container {
@@ -469,7 +491,6 @@ body {
         font-size: 5rem;
     }
 
-
     .contact-me {
         font-size: clamp(16px, 14vw, 3rem);
         width: 100%;
@@ -486,4 +507,9 @@ body {
     #buttons {
         width: 100%;
     }
+
+    .donwload {
+        font-size: 1rem;
+    }
 }
+

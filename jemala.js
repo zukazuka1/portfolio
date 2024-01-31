@@ -72,11 +72,13 @@ gsap.from(".logo", {
     duration: 1
 });
 
-gsap.from(".nav-bar", {
-    y: -100,
-    opacity: 0,
-    duration: 1
-});
+if (window.innerHeight > 768) {
+    gsap.from(".nav-bar", {
+        y: -100,
+        opacity: 0,
+        duration: 1
+    });
+}
 
 gsap.from(".wraper", {
     y: -100,
