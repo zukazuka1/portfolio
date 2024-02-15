@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+    document.querySelector(".loader-section").style.display = "none";
+})
+
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".logo").addEventListener("click", () => {
         location.href = "#";
