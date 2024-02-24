@@ -293,7 +293,7 @@ body {
 
 .box {
     width: 30%;
-    height: 50%;
+    height: max(300px, 50vh);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -632,6 +632,7 @@ body {
     }
 
     .add form {
+        height: 400px;
         align-items: center;
     }
 
@@ -641,5 +642,9 @@ body {
 
     .donwload {
         font-size: 1rem;
+    }
+
+    .messages {
+        height: 200px;
     }
 }
